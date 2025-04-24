@@ -8,7 +8,7 @@ export default function About() {
       {content.about.map((text, index) => (
         <div
           key={index}
-          className="mb-4"
+          className="mb-4 text-sm text-pretty break-all"
           dangerouslySetInnerHTML={{ __html: text }}
         />
       ))}

@@ -8,7 +8,7 @@ export default function Nav() {
       <nav>
         <ul>
           {content.menu.map((item, index) => (
-            <li key={index} className="">
+            <li key={index} className="text-md py-4">
               <Link href={item.link}>{item.name}</Link>
             </li>
           ))}

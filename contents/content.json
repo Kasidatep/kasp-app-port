@@ -23,58 +23,98 @@
   ],
   "experiences": [
     {
-        "date": {
-            "start": "2023-01-01",
-            "end": null,
-            "present": true
+      "date": {
+        "start": "2023-01-01",
+        "end": null,
+        "present": true
+      },
+      "title": "Chatbot Developer Intern - AmitySolutions",
+      "description": "I am worked as a chatbot developer intern at AmitySolutions, where I am responsible for developing and maintaining chatbots for various clients. My role involves collaborating with cross-functional teams to gather requirements, design chatbot flows, and implement features using various technologies. I am also involved in testing and debugging chatbots to ensure they meet client expectations.",
+      "attachment": [
+        {
+          "type": "link",
+          "link": "https://seniorproject.sit.kmutt.ac.th/projectPoster/posterIT64-BU54.gif",
+          "name": "Amity Solutions"
         },
-        "title": "Chatbot Developer Intern - AmitySolutions",
-        "description": "I am worked as a chatbot developer intern at AmitySolutions, where I am responsible for developing and maintaining chatbots for various clients. My role involves collaborating with cross-functional teams to gather requirements, design chatbot flows, and implement features using various technologies. I am also involved in testing and debugging chatbots to ensure they meet client expectations.",
-        "attachment": [
-            {
-                "type": "image",
-                "src": "https://cdn.creazilla.com/icons/3220751/typescript-icon-lg.png",
-                "name": "Amity Solutions"
-            },
-            {
-                "type": "link",
-                "src": "https://kmutt.me/imguide",
-                "name": "My Guide"
-            }
-        ],
-        "tools": [
-             "nextjs",
-             "typescript"
-        ],
-        "link": "https://kmutt.me/imguide"
+        {
+          "type": "link",
+          "link": "https://kmutt.me/imguide",
+          "name": "My Guide"
+        }
+      ],
+      "tools": ["nextjs", "typescript"],
+      "link": "https://kmutt.me/imguide"
     },
     {
-        "date": {
-            "start": "2022",
-            "end": "2023",
-            "present": false
-        },
-        "title": "Software Engineer Intern - AmitySolutions",
-        "description": "I worked as a software engineer intern at AmitySolutions, where I was involved in developing and maintaining web applications using various technologies. My role included collaborating with cross-functional teams to gather requirements, design user interfaces, and implement features. I also participated in testing and debugging applications to ensure they met client expectations.",
-        "attachment": [],
-        "tools": [
-             "nextjs"
-        ],
-        "link": ""
+      "date": {
+        "start": "2022",
+        "end": "2023",
+        "present": false
+      },
+      "title": "Software Engineer Intern - AmitySolutions",
+      "description": "I worked as a software engineer intern at AmitySolutions, where I was involved in developing and maintaining web applications using various technologies. My role included collaborating with cross-functional teams to gather requirements, design user interfaces, and implement features. I also participated in testing and debugging applications to ensure they met client expectations.",
+      "attachment": [],
+      "tools": ["nextjs"],
+      "link": ""
+    }
+  ],
+  "projects": [
+    {
+      "title": "I'm Guide",
+      "description": "I'm Guide is a web application that provides users with a platform to create and share guides on various topics. The application allows users to create guides, add images and videos, and share them with others. Users can also browse and search for guides created by other users.",
+      "attachment": [
+        {
+          "type": "link",
+          "link": "https://kmutt.me/imguide",
+          "name": "My Guide"
+        }
+      ],
+      "tools": ["nextjs", "typescript"],
+      "link": "https://seniorproject.sit.kmutt.ac.th/showproject/IT64-BU54",
+      "image": "https://seniorproject.sit.kmutt.ac.th/projectPoster/posterIT64-BU54.gif"
+    },
+    {
+      "title": "SAS Anouncement System",
+      "description": "SAS Anouncement System is a web application that provides users with a platform to create and share announcements on various topics. The application allows users to create announcements, add images and videos, and share them with others. Users can also browse and search for announcements created by other users.",
+      "attachment": [],
+      "tools": ["nextjs"],
+      "link": "",
+      "image": "https://www.sit.kmutt.ac.th/wp-content/uploads/2025/04/On-Day2025.png"
     }
   ],
   "tool_list": [
     {
-        "id": "nextjs",
-        "name": "Next.js",
-        "icon": "/icons/nextjs.png",
-        "is_highlight": true
+      "id": "nextjs",
+      "name": "Next.js",
+      "icon": "/icons/nextjs.png",
+      "is_highlight": true
     },
     {
-        "id": "typescript",
-        "name": "TypeScript",
-        "icon": "/icons/typescript.svg",
-        "is_highlight": true
+      "id": "typescript",
+      "name": "TypeScript",
+      "icon": "/icons/typescript.svg",
+      "is_highlight": true
     }
-  ]
+  ],
+  "socials": [
+    {
+      "name": "Github",
+      "link": "https://github.com/kasidatep",
+      "icon": "/icons/github.png"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/kasidatep",
+      "icon": "/icons/linkedin.png"
+    },
+    {
+      "name": "Facebook",
+      "link": "https://www.facebook.com/kasidatep",
+      "icon": "/icons/facebook.png"
+    }
+  ],
+  "resume": {
+    "name": "Kasidate's Resume",
+    "link": "/resume/resume.pdf"
+  }
 }

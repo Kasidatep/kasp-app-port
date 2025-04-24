@@ -4,7 +4,7 @@ const formatter = (text: string) => {
     const month = Number(dateArray[1]) - 1;
     if(dateArray.length == 1) return year.toString()
     const monthString = new Date(year, month).toLocaleString("default", {
-      month: "long",
+      month: "short",
     });
     return `${monthString} ${year}`;
   };
