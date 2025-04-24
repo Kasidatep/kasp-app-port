@@ -1,0 +1,80 @@
+{
+  "name": "Kasidate Phlaiphueak",
+  "position": "Software Engineer",
+  "subtitle": "Loves to learn new things.",
+  "menu": [
+    {
+      "name": "About",
+      "link": "#about"
+    },
+    {
+      "name": "Experience",
+      "link": "#experiences"
+    },
+    {
+      "name": "Projects",
+      "link": "#projects"
+    }
+  ],
+  "about": [
+    "I am a <strong>software engineer</strong> with a passion for learning and exploring new technologies. I have experience in various programming languages and frameworks, and I enjoy working on challenging projects that push my skills to the limit. In my free time, I like to read books, play video games, and spend time with my family and friends.",
+    "I am always looking for new opportunities to grow and develop my skills, and I am excited to see where my career will take me in the future. I believe that continuous learning is key to success in the tech industry, and I am committed to staying up-to-date with the latest trends and technologies.",
+    "I am a team player who enjoys collaborating with others to achieve common goals. I believe that effective communication and teamwork are essential for success in any project, and I strive to foster a positive and productive work environment."
+  ],
+  "experiences": [
+    {
+        "date": {
+            "start": "2023-01-01",
+            "end": null,
+            "present": true
+        },
+        "title": "Chatbot Developer Intern - AmitySolutions",
+        "description": "I am worked as a chatbot developer intern at AmitySolutions, where I am responsible for developing and maintaining chatbots for various clients. My role involves collaborating with cross-functional teams to gather requirements, design chatbot flows, and implement features using various technologies. I am also involved in testing and debugging chatbots to ensure they meet client expectations.",
+        "attachment": [
+            {
+                "type": "image",
+                "src": "https://cdn.creazilla.com/icons/3220751/typescript-icon-lg.png",
+                "name": "Amity Solutions"
+            },
+            {
+                "type": "link",
+                "src": "https://kmutt.me/imguide",
+                "name": "My Guide"
+            }
+        ],
+        "tools": [
+             "nextjs",
+             "typescript"
+        ],
+        "link": "https://kmutt.me/imguide"
+    },
+    {
+        "date": {
+            "start": "2022",
+            "end": "2023",
+            "present": false
+        },
+        "title": "Software Engineer Intern - AmitySolutions",
+        "description": "I worked as a software engineer intern at AmitySolutions, where I was involved in developing and maintaining web applications using various technologies. My role included collaborating with cross-functional teams to gather requirements, design user interfaces, and implement features. I also participated in testing and debugging applications to ensure they met client expectations.",
+        "attachment": [],
+        "tools": [
+             "nextjs"
+        ],
+        "link": ""
+    }
+  ],
+  "tool_list": [
+    {
+        "id": "nextjs",
+        "name": "Next.js",
+        "icon": "/icons/nextjs.png",
+        "is_highlight": true
+    },
+    {
+        "id": "typescript",
+        "name": "TypeScript",
+        "icon": "/icons/typescript.svg",
+        "is_highlight": true
+    }
+  ]
+}
