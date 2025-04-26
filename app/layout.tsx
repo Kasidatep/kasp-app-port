@@ -34,16 +34,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#000000" />
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body className={`${spaceGrotesk.variable} font-sans bg-gradient-dark antialiased`}>
         <div className="grain"></div>
         <div className="cursor-glow"></div>
