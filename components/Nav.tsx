@@ -28,17 +28,21 @@ export default function Nav() {
   }, []);
   
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md">
-      <nav>
-        <ul className="flex flex-col lg:flex-row justify-center gap-4">
+    <div className="editor-card">
+      <pre className="p-3 text-sm">
+        <span className="syntax-keyword">import</span> <span className="syntax-variable">{'{ Navigation }'}</span> <span className="syntax-keyword">from</span> <span className="syntax-string">'@/utils'</span>;
+      </pre>
+      
+      <nav className="py-2">
+        <ul className="flex flex-wrap gap-2 px-3 pb-3">
           {content.menu.map((item, index) => (
-            <li key={index} className="text-md">
+            <li key={index}>
               <Link 
                 href={item.link}
-                className={`link-hover py-2 px-4 rounded-md block transition-all duration-300 ${
+                className={`py-1 px-3 rounded text-sm transition-all duration-300 ${
                   activeSection === item.link.substring(1) 
-                    ? "bg-blue-100 text-blue-600 font-semibold" 
-                    : "hover:bg-gray-100"
+                    ? "bg-[#264f78] text-white" 
+                    : "hover:bg-[#3a3d41]"
                 }`}
                 onClick={(e) => {
                   e.preventDefault();
@@ -47,12 +51,12 @@ export default function Nav() {
                   });
                 }}
               >
-                {item.name}
+                <span className="syntax-function">{item.name}</span>()
               </Link>
             </li>
           ))}
         </ul>
       </nav>
     </div>
-  );
+    );
 }

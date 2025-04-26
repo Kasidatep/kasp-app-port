@@ -1,54 +1,42 @@
 // components/HeaderProfile.tsx
 'use client';
 
-import { useEffect, useRef } from 'react';
 import content from "../contents/content.json";
 import LinkLabel from "./LinkLabel";
 import Image from "next/image";
 
 export default function HeaderProfile() {
-  const nameRef = useRef<HTMLHeadingElement>(null);
-  
-  useEffect(() => {
-    const letters = nameRef.current?.textContent?.split('') || [];
-    if (nameRef.current) {
-      nameRef.current.innerHTML = '';
-      letters.forEach((letter, index) => {
-        const span = document.createElement('span');
-        span.textContent = letter;
-        span.style.opacity = '0';
-        span.style.animation = `fadeIn 0.5s forwards ${index * 0.05}s`;
-        nameRef.current?.appendChild(span);
-      });
-    }
-  }, []);
-  
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md transform transition-all duration-500 hover:shadow-xl">
-      <div className="overflow-hidden rounded-full w-24 h-24 mx-auto mb-4 border-4 border-blue-500">
+    <div className="editor-card p-4">
+      <div className="overflow-hidden rounded-full w-20 h-20 mx-auto mb-4 border-2 border-[#0d99ff]">
         <Image 
-          src="/images/profile-k.png" 
-          width={96} 
-          height={96} 
+          src="/profile-placeholder.jpg" 
+          width={80} 
+          height={80} 
           alt="Profile"
           className="w-full h-full object-cover"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
-            target.src = "https://via.placeholder.com/96?text=KP";
+            target.src = "https://via.placeholder.com/80?text=KP";
           }}
         />
       </div>
-      <h1 ref={nameRef} className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> 
-        {content.name}
-      </h1>
-      <div className="text-xl font-semibold text-center mt-2 animate-fade-in animate-delay-1"> 
-        {content.position}
-      </div>
-      <div className="text-md font-light text-center mt-1 animate-fade-in animate-delay-2"> 
-        {content.subtitle}
-      </div>
-      <div className="flex justify-center mt-4 animate-fade-in animate-delay-3">
-        <LinkLabel link={content.resume.link} name={content.resume.name} />
+      
+      <div className="text-center">
+        <pre className="whitespace-pre-wrap mb-2">
+          <span className="syntax-keyword">const</span> <span className="syntax-variable">developer</span> = {'{'}
+            <br/>  <span className="syntax-variable">name</span>: <span className="syntax-string">"{content.name}"</span>,
+            <br/>  <span className="syntax-variable">role</span>: <span className="syntax-string">"{content.position}"</span>
+          <br/>{'}'}
+        </pre>
+        
+        <div className="text-md mb-3 text-[#9cdcfe]"> 
+          {content.subtitle}
+        </div>
+        
+        <div className="mt-3">
+          <LinkLabel link={content.resume.link} name={content.resume.name} />
+        </div>
       </div>
     </div>
   );
