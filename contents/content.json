@@ -1,7 +1,8 @@
 {
   "name": "Kasidate Phlaiphueak",
   "position": "Software Engineer",
-  "subtitle": "Loves to learn new things.",
+  "subtitle": "Passionate about technology and continuous learning.",
+  "avatar": null,
   "menu": [
     {
       "name": "About",
@@ -17,19 +18,19 @@
     }
   ],
   "about": [
-    "I am a <strong>software engineer</strong> with a passion for learning and exploring new technologies. I have experience in various programming languages and frameworks, and I enjoy working on challenging projects that push my skills to the limit. In my free time, I like to read books, play video games, and spend time with my family and friends.",
-    "I am always looking for new opportunities to grow and develop my skills, and I am excited to see where my career will take me in the future. I believe that continuous learning is key to success in the tech industry, and I am committed to staying up-to-date with the latest trends and technologies.",
-    "I am a team player who enjoys collaborating with others to achieve common goals. I believe that effective communication and teamwork are essential for success in any project, and I strive to foster a positive and productive work environment."
+    "I am a <strong>software engineer</strong> with a passion for learning and exploring new technologies. I have experience in various programming languages and frameworks, including JavaScript, TypeScript, Next.js, Vue.js, and Java. I enjoy working on challenging projects that push my skills to the limit.",
+    "I'm currently pursuing my B.Sc. in Information Technology at King Mongkut's University of Technology Thonburi with a GPAX of 3.78. My journey in coding began during high school, and I've been fascinated with the constant learning aspect ever since.",
+    "I am a team player who thrives on challenges and is adept at working both independently and collaboratively. My proficiency in agile development methodologies further complements my technical abilities, and I am committed to personal and professional growth in the tech industry."
   ],
   "experiences": [
     {
       "date": {
-        "start": "2023-01-01",
-        "end": null,
-        "present": true
+        "start": "2024-01-01",
+        "end": "2024-06-30",
+        "present": false
       },
       "title": "Chatbot Developer Intern - AmitySolutions",
-      "description": "I am worked as a chatbot developer intern at AmitySolutions, where I am responsible for developing and maintaining chatbots for various clients. My role involves collaborating with cross-functional teams to gather requirements, design chatbot flows, and implement features using various technologies. I am also involved in testing and debugging chatbots to ensure they meet client expectations.",
+      "description": "Completed a 6-month internship in Chatbot Development, building a chat community and working on chatbot flows change requirement projects. My role involved collaborating with cross-functional teams to gather requirements, design chatbot flows, and implement features using various technologies.",
       "attachment": [
         {
           "type": "link",
@@ -42,79 +43,238 @@
           "name": "My Guide"
         }
       ],
-      "tools": ["nextjs", "typescript"],
+      "tools": ["nextjs", "typescript", "nestjs"],
       "link": "https://kmutt.me/imguide"
     },
     {
       "date": {
-        "start": "2022",
+        "start": "2023",
         "end": "2023",
         "present": false
       },
-      "title": "Software Engineer Intern - AmitySolutions",
-      "description": "I worked as a software engineer intern at AmitySolutions, where I was involved in developing and maintaining web applications using various technologies. My role included collaborating with cross-functional teams to gather requirements, design user interfaces, and implement features. I also participated in testing and debugging applications to ensure they met client expectations.",
+      "title": "Web Developer - SIT Announcement Systems",
+      "description": "Created a site announcement system using Vue.js and Java Spring Boot. The Spring Boot component provided REST API functionality, including authentication, proxy settings, and Docker deployment. This project improved communication within the School of Information Technology.",
       "attachment": [],
-      "tools": ["nextjs"],
+      "tools": ["vuejs", "java", "springboot", "docker"],
+      "link": ""
+    },
+    {
+      "date": {
+        "start": "2021",
+        "end": null,
+        "present": true
+      },
+      "title": "Undergraduate Student - KMUTT",
+      "description": "Currently pursuing a B.Sc. in Information Technology at King Mongkut's University of Technology Thonburi with a GPAX of 3.78. Actively participating in coursework, projects, and extracurricular activities that enhance my technical and soft skills.",
+      "attachment": [],
+      "tools": [],
       "link": ""
     }
   ],
   "projects": [
     {
       "title": "I'm Guide",
-      "description": "I'm Guide is a web application that provides users with a platform to create and share guides on various topics. The application allows users to create guides, add images and videos, and share them with others. Users can also browse and search for guides created by other users.",
+      "description": "AI-Powered Travel Planning Application for Thailand. Built the frontend with Next.js + LIFF for seamless LINE OA integration and developed the backend with NestJS, connecting AI-powered trip planning, Redis caching, and MongoDB/MySQL databases into a scalable real-time system.",
       "attachment": [
         {
           "type": "link",
           "link": "https://kmutt.me/imguide",
-          "name": "My Guide"
+          "name": "Landing Page"
+        },
+        {
+          "type": "link",
+          "link": "https://seniorproject.sit.kmutt.ac.th/showproject/IT64-BU54",
+          "name": "Project Document"
         }
       ],
-      "tools": ["nextjs", "typescript"],
+      "tools": ["nextjs", "typescript", "nestjs", "mongodb", "mysql", "redis"],
       "link": "https://seniorproject.sit.kmutt.ac.th/showproject/IT64-BU54",
       "image": "https://seniorproject.sit.kmutt.ac.th/projectPoster/posterIT64-BU54.gif"
     },
     {
-      "title": "SAS Anouncement System",
-      "description": "SAS Anouncement System is a web application that provides users with a platform to create and share announcements on various topics. The application allows users to create announcements, add images and videos, and share them with others. Users can also browse and search for announcements created by other users.",
-      "attachment": [],
-      "tools": ["nextjs"],
+      "title": "SAS - SIT Announcement Systems",
+      "description": "Created a site announcement system using Vue.js, a JavaScript front-end framework, in conjunction with Java Spring Boot. The Spring Boot component provided REST API functionality, including authentication, proxy settings, and Docker deployment.",
+      "attachment": [
+        {
+          "type": "link",
+          "link": "#",
+          "name": "FrontEnd"
+        },
+        {
+          "type": "link",
+          "link": "#",
+          "name": "BackEnd"
+        }
+      ],
+      "tools": ["vuejs", "java", "springboot", "docker"],
       "link": "",
-      "image": "https://www.sit.kmutt.ac.th/wp-content/uploads/2025/04/On-Day2025.png"
+      "image": null
+    },
+    {
+      "title": "e-Library Frontend",
+      "description": "Spearheaded the e-library project with Vue.js, overseeing responsibilities related to project details, system flow, design of a mock API server (JSON server), and management of CRUD operations for the Post Announcement Section.",
+      "attachment": [
+        {
+          "type": "link",
+          "link": "https://github.com/Kasidatep/e-Library",
+          "name": "GitHub Repository"
+        }
+      ],
+      "tools": ["vuejs", "javascript", "json-server"],
+      "link": "https://github.com/Kasidatep/e-Library",
+      "image": null
+    },
+    {
+      "title": "Dating Game",
+      "description": "Developed a dating-themed game, including storyline, scenes, and dialogues, utilizing Vue.js. Focused on the logic of game design and in-game functions to create an engaging user experience.",
+      "attachment": [
+        {
+          "type": "link",
+          "link": "https://github.com/Kasidatep/boi_javascriptGame",
+          "name": "GitHub Repository"
+        }
+      ],
+      "tools": ["vuejs", "javascript"],
+      "link": "https://github.com/Kasidatep/boi_javascriptGame",
+      "image": null
+    },
+    {
+      "title": "Todo List Web Application",
+      "description": "Developed a web application using Java Servlets and JSP that functions as a todo list app with authentication, comprising admin/user pages and implementing CRUD operations for managing todo lists and user profiles.",
+      "attachment": [
+        {
+          "type": "link",
+          "link": "https://github.com/Kasidatep/KasP_TodoList_Servlet",
+          "name": "GitHub Repository"
+        }
+      ],
+      "tools": ["java", "servlet", "jsp"],
+      "link": "https://github.com/Kasidatep/KasP_TodoList_Servlet",
+      "image": null
     }
   ],
   "tool_list": [
     {
       "id": "nextjs",
       "name": "Next.js",
-      "icon": "/icons/nextjs.png",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       "is_highlight": true
     },
     {
       "id": "typescript",
       "name": "TypeScript",
-      "icon": "/icons/typescript.svg",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       "is_highlight": true
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "is_highlight": true
+    },
+    {
+      "id": "vuejs",
+      "name": "Vue.js",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+      "is_highlight": true
+    },
+    {
+      "id": "nestjs",
+      "name": "Nest.js",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs",
+      "is_highlight": true
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "springboot",
+      "name": "Spring Boot",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "line-messaging-api",
+      "name": "Line Messaging API",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg",
+      "is_highlight": false
+    },
+    {
+      "id": "node-red",
+      "name": "Node-RED",
+      "icon": "https://nodered.org/about/resources/media/node-red-icon.svg",
+      "is_highlight": false
     }
   ],
   "socials": [
     {
       "name": "Github",
       "link": "https://github.com/kasidatep",
-      "icon": "/icons/github.png"
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
     },
     {
       "name": "LinkedIn",
       "link": "https://www.linkedin.com/in/kasidatep",
-      "icon": "/icons/linkedin.png"
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
     },
     {
       "name": "Facebook",
       "link": "https://www.facebook.com/kasidatep",
-      "icon": "/icons/facebook.png"
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
     }
   ],
   "resume": {
     "name": "Kasidate's Resume",
-    "link": "/resume/resume.pdf"
+    "link": "/resume/KASIDATEPHLAIPHUEAKRESUME.pdf"
+  },
+  "contact": {
+    "email": "bankkasidate@gmail.com",
+    "phone": "+66 098 303 0214",
+    "address": "Bang Mot, Thung Khru, Bangkok"
   }
 }

@@ -1,7 +1,16 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+      domains: [
+        'seniorproject.sit.kmutt.ac.th',
+        'www.sit.kmutt.ac.th',
+        'via.placeholder.com',
+        'www.kasidate.me',
+        '*.kasidate.me',
+        "cdn-icons-png.flaticon.com"
+      ],
+    },
+    reactStrictMode: true,
+  }
   
-};
-
-export default nextConfig;
+  module.exports = nextConfig

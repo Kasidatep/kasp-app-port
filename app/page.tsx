@@ -1,22 +1,72 @@
-import Content from "@/components/Content";
-import HeaderProfile from "@/components/HeaderProfile";
-import Nav from "@/components/Nav";
-import SocialMedia from "@/components/SocialMedia";
+"use client";
+
+import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+import ParticleBackground from "@/components/ParticleBackground";
+import AnimatedHero from "@/components/AnimatedHero";
+import AnimatedAbout from "@/components/AnimatedAbout";
+import AnimatedExperience from "@/components/AnimatedExperience";
+import AnimatedProjects from "@/components/AnimatedProjects";
+import AnimatedFooter from "@/components/AnimatedFooter";
+import ScrollToTop from "@/components/ScrollToTop";
+
+const Header = dynamic(() => import('@/components/Header'), { ssr: false });
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+  
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+      document.body.style.overflow = '';
+    }, 2000);
+    
+    return () => {
+      clearTimeout(timer);
+      document.body.style.overflow = '';
+    };
+  }, []);
+  
   return (
-    <div className="flex flex-col lg:flex-row w-full h-screen">
-      <div className="w-full contents lg:fixed lg:top-0 lg:left-0 lg:w-1/2 h-auto lg:h-screen p-4">
-        <div className="lg:pl-24 lg:py-24 flex flex-col justify-between">
-          <HeaderProfile />
-          <Nav />
-          <SocialMedia />
+    <main>
+      {isLoading ? (
+        <div className="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
+          <div className="relative">
+            <div className="text-5xl font-extrabold">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600 animated-text">
+                KASIDATE
+              </span>
+            </div>
+            <div className="mt-4 w-64 h-1 bg-gray-200 rounded-full overflow-hidden">
+              <div 
+                className="h-full bg-gradient-to-r from-blue-500 to-purple-600"
+                style={{ width: '100%', animation: 'codeReveal 2s forwards' }}
+              ></div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="lg:pr-24 lg:py-14 ml-auto w-full lg:w-1/2  lg:h-screen lg:overflow-y-scroll p-4">
-        <Content />
-      </div>
-    </div>
+      ) : (
+        <>
+          <ParticleBackground />
+          
+          <Header />
+          
+          <AnimatedHero />
+          
+          <AnimatedAbout />
+          
+          <AnimatedExperience />
+          
+          <AnimatedProjects />
+          
+          
+          <AnimatedFooter />
+          
+          <ScrollToTop />
+        </>
+      )}
+    </main>
   );
 }
