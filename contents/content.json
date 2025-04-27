@@ -34,11 +34,11 @@
       "attachment": [
         {
           "type": "link",
-          "link": "https://seniorproject.sit.kmutt.ac.th/projectPoster/posterIT64-BU54.gif",
+          "link": "https://amitysolutions.com/",
           "name": "Amity Solutions"
         }
       ],
-      "tools": ["nextjs", "typescript", "nestjs"],
+      "tools": ["nextjs", "typescript", "mongodb", "node-red", "line-messaging-api"],
       "link": ""
     },
     {
@@ -49,8 +49,16 @@
       },
       "title": "Undergraduate Student - KMUTT",
       "description": "Currently pursuing a B.Sc. in Information Technology at King Mongkut's University of Technology Thonburi with a GPAX of 3.78. Actively participating in coursework, projects, and extracurricular activities that enhance my technical and soft skills.",
-      "attachment": [],
-      "tools": [],
+      "attachment": [
+        {
+          "type": "link",
+          "link": "https://seniorproject.sit.kmutt.ac.th/showproject/IT64-BU54",
+          "name": "Senior Project Document"
+        }
+      ],
+      "tools": [
+        "typescript", "nestjs", "mongodb", "mysql", "redis", "vuejs", "redis", "docker", "java"
+      ],
       "link": ""
     }
   ],
@@ -158,30 +166,30 @@
           "type": "link",
           "link": "https://game.kasidate.me",
           "name": "Live Demo"
-        }
+        }       
       ],
       "tools": ["vuejs", "javascript"],
       "link": "https://game.kasidate.me",
       "image": "/01.png"
     },
     {
-      "title": "Dating Game",
-      "description": "Developed a dating-themed game, including storyline, scenes, and dialogues, utilizing Vue.js. Focused on the logic of game design and in-game functions to create an engaging user experience.",
+      "title": "QR Code Generator",
+      "description": "Developed a responsive web application for generating QR codes with an intuitive user interface. The application allows users to create QR codes for URLs and text with custom styling, provides instant visualization, and enables direct download of generated QR codes as PNG images.",
       "attachment": [
-        {
+      {
           "type": "link",
-          "link": "https://github.com/Kasidatep/boi_javascriptGame",
-          "name": "GitHub Repository"
+          "link": "https://qrcode.kasidate.me",
+          "name": "Live Demo"
         },
         {
           "type": "link",
-          "link": "https://game.kasidate.me",
-          "name": "Live Demo"
+          "link": "https://github.com/Kasidatep/qrcode-generator",
+          "name": "GitHub Repository"
         }
       ],
-      "tools": ["vuejs", "javascript"],
-      "link": "https://game.kasidate.me",
-      "image": "/01.png"
+      "tools": ["css", "html","javascript", "qrcodejs"],
+      "link": "https://qrcode.kasidate.me",
+      "image": "/04.png"
     },
     {
       "title": "Line OA Retrive Message History",
