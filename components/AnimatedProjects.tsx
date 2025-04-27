@@ -2,6 +2,8 @@
 
 import { useRef, useEffect, useState } from "react";
 import content from "../contents/content.json";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import { ImGithub } from "react-icons/im";
 
 export default function AnimatedProjects() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -63,10 +65,10 @@ export default function AnimatedProjects() {
           {content.projects.map((project, index) => (
             <div 
               key={index}
-              className={`project-card card-3d opacity-80 hover:opacity-100 transition-all duration-700  `}
+              className={`project-card h-full card-3d opacity-70 hover:opacity-100 transition-all duration-700  `}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="card-3d-content relative bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className=" relative bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="relative h-56 overflow-hidden">
                   <img
                     src={project.image ?? "/no-image.jpg"}
@@ -85,9 +87,7 @@ export default function AnimatedProjects() {
                         rel="noopener noreferrer"
                         className="btn btn-glow bg-white text-blue-600 hover:bg-blue-50 mb-3 transform transition-transform duration-300 hover:scale-105"
                       >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
-                        </svg>
+                        <HiOutlineExternalLink className="mr-2" />
                         View Project
                       </a>
                     )}
@@ -102,7 +102,7 @@ export default function AnimatedProjects() {
                     {project.title}
                   </h3>
                   
-                  <p className={`text-gray-700 mb-4 transition-all duration-300 line-clamp-4 hover:line-clamp-none `}>
+                  <p className={`text-gray-700  mb-4 transition-all duration-300 line-clamp-4 hover:line-clamp-none `}>
                     {project.description}
                   </p>
                   {project.attachment && project.attachment.length > 0 && (
@@ -199,10 +199,9 @@ export default function AnimatedProjects() {
             rel="noopener noreferrer"
             className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors"
           >
-            <span>View more projects on GitHub</span>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
+                       <ImGithub className="mr-2" />
+                       <span>View more projects on GitHub</span>
+
           </a>
         </div>
       </div>

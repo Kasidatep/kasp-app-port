@@ -63,7 +63,7 @@ export default function AnimatedExperience() {
         </div>
         
         <div ref={sectionRef} className="timeline-container max-w-4xl mx-auto relative pl-8 lg:pl-0">
-          <div className="timeline-line"></div>
+          <div className="timeline-line lg:hidden"></div>
           
           {content.experiences.map((item, index) => (
             <div
@@ -73,9 +73,9 @@ export default function AnimatedExperience() {
               } lg:w-1/2`}
               style={{ transitionDelay: `${index * 200}ms` }}
             >
-              <div className="timeline-dot lg:left-0 lg:right-0 lg:mx-auto" style={{ top: '24px', animationDelay: `${index * 200 + 800}ms` }}></div>
+              <div className="timeline-dot lg:left-0 lg:right-0 lg:mx-auto" style={{ top: '10px', left: '-12px', animationDelay: `${index * 200 + 800}ms` }}></div>
               
-              <div className="inline-block px-4 py-2 bg-white shadow-md rounded-full text-sm font-bold text-blue-600 mb-4">
+              <div className="inline-block px-4 py-2 mr-2 bg-white shadow-md rounded-full text-sm font-bold text-blue-600 mb-4">
                 {formatDate(item.date)}
               </div>
               

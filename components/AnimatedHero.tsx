@@ -3,15 +3,17 @@
 import { useEffect, useState, useRef } from "react";
 import content from "../contents/content.json";
 import SocialLinks from "./SocialLinks";
+import { FaAngleDoubleDown } from "react-icons/fa";
+import { CgWorkAlt } from "react-icons/cg";
+import { IoDocumentText } from "react-icons/io5";
 
 export default function AnimatedHero() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [typedText, setTypedText] = useState("");
   const fullText = "Software Engineer & Web Developer";
-  const typingSpeed = 100; // milliseconds per character
+  const typingSpeed = 100; 
   const cursorRef = useRef<HTMLSpanElement>(null);
   
-  // Typing effect
   useEffect(() => {
     if (!isLoaded) return;
     
@@ -28,7 +30,6 @@ export default function AnimatedHero() {
     return () => clearInterval(typingInterval);
   }, [isLoaded]);
   
-  // Blinking cursor
   useEffect(() => {
     if (!cursorRef.current) return;
     
@@ -41,7 +42,6 @@ export default function AnimatedHero() {
     return () => clearInterval(cursorBlinkInterval);
   }, []);
   
-  // Animation sequence
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoaded(true);
@@ -87,10 +87,9 @@ export default function AnimatedHero() {
                   document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                View My Work
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
+                View My Work {' '}
+                <CgWorkAlt className="ml-2" />
+
               </a>
               
               <a 
@@ -99,9 +98,7 @@ export default function AnimatedHero() {
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
+                <IoDocumentText className="mr-2" /> {' '}
                 Resume
               </a>
             </div>
@@ -147,7 +144,7 @@ export default function AnimatedHero() {
               
               <div className="absolute -bottom-5 right-10 transform translate-y-0 floating" style={{ animationDelay: '0.5s' }}>
                 <div className="bg-white rounded-full shadow-lg py-2 px-4 flex items-center z-30">
-                  <span className="text-blue-600 font-bold">5+ Projects</span>
+                  <span className="text-blue-600 font-bold">{content.projects.length}+ Projects</span>
                 </div>
               </div>
             </div>
@@ -156,9 +153,8 @@ export default function AnimatedHero() {
         
 =        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-gray-500 animate-bounce">
           <span className="text-sm mb-1">Scroll Down</span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clipRule="evenodd" />
-          </svg>
+          <FaAngleDoubleDown />
+
         </div>
       </div>
     </section>

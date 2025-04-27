@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import content from "../contents/content.json";
+import { IoDocument, IoShareSocial } from "react-icons/io5";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import { MdMarkEmailUnread } from "react-icons/md";
+import { FaMapPin } from "react-icons/fa";
 
 export default function AnimatedFooter() {
   const [isVisible, setIsVisible] = useState(false);
@@ -70,9 +74,8 @@ export default function AnimatedFooter() {
                       document.querySelector(item.link)?.scrollIntoView({ behavior: 'smooth' });
                     }}
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                    </svg>
+                    <HiOutlineExternalLink  className="mr-2" />{' '}
+
                     {item.name}
                   </Link>
                 </li>
@@ -84,9 +87,7 @@ export default function AnimatedFooter() {
                   rel="noopener noreferrer"
                   className="text-blue-200 hover:text-white transition-colors duration-300 flex items-center"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clipRule="evenodd" />
-                  </svg>
+                  <IoDocument  className="mr-2" /> {' '}
                   Resume
                 </a>
               </li>
@@ -101,24 +102,21 @@ export default function AnimatedFooter() {
                   href={"mailto:" + content.contact.email}
                   className="text-blue-200 hover:text-white transition-colors duration-300 flex items-center"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
+                  <MdMarkEmailUnread className="mr-2" />
+                  {' '}
                   {content.contact.email}
                 </a>
               </li>
               <li className="flex items-center text-blue-200">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                </svg>
+              <FaMapPin  className="mr-2" />
+                {' '}
                 {content.contact.address}
               </li>
               <li className="flex items-center text-blue-200">
-                <div className="h-3 w-3 bg-green-500 rounded-full mr-2 relative">
+                <div className="h-3 w-3 bg-green-500 rounded-full mr-3 relative">
                   <span className="absolute inset-0 h-full w-full bg-green-500 rounded-full animate-ping opacity-75"></span>
                 </div>
-                Available for new opportunities
+                 Available for new opportunities
               </li>
             </ul>
           </div>

@@ -7,7 +7,8 @@ const nextConfig = {
         'via.placeholder.com',
         'www.kasidate.me',
         '*.kasidate.me',
-        "cdn-icons-png.flaticon.com"
+        "cdn-icons-png.flaticon.com",
+        "nestjs.com"
       ],
     },
     reactStrictMode: true,

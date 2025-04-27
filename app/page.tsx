@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <ParticleBackground />
+          {/* <ParticleBackground /> */}
           
           <Header />
           
