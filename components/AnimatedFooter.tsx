@@ -126,11 +126,6 @@ export default function AnimatedFooter() {
         
         <div className="text-center text-blue-300 text-sm">
           <p>© {currentYear} {content.name}. All rights reserved.</p>
-          <p className="mt-2">
-            <span>Designed and built with</span> 
-            <span className="mx-1 animate-pulse text-red-400">❤</span>
-            <span>using Next.js & Tailwind CSS</span>
-          </p>
         </div>
       </div>
     </footer>

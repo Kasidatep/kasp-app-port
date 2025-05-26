@@ -88,12 +88,12 @@
       "attachment": [
         {
           "type": "link",
-          "link": "#",
+          "link": "https://github.com/Kasidatep/SAS-FrontEnd",
           "name": "FrontEnd"
         },
         {
           "type": "link",
-          "link": "#",
+          "link": "https://github.com/Kasidatep/SAS-BackEnd",
           "name": "BackEnd"
         }
       ],
@@ -116,7 +116,7 @@
               "name": "GitHub Repository"
           }
       ],
-      "tools": ["nextjs", "mongodb", "typescript", "qrcodejs"],
+      "tools": ["html", "css", "javascript"],
       "link": "https://spotlight.kasidate.me/news",
       "image": "/06.png"
   },
